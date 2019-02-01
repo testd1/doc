@@ -31,7 +31,7 @@ section {
 <body >
   <section>
     <div class="content" id="app">
-        <chat api-endpoint="/botman/botman"></chat>
+        <chat api-endpoint="/chats"></chat>
     </div>
 </section> 
 <script src="{{asset('js/app.js')}}"></script>

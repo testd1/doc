@@ -48437,8 +48437,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     return _c('div', {
       staticClass: "row"
     }, [_c('div', {
-      class: message.isMine ? 'confetti-button' : 'confetti-button-right'
-    }, [_vm._v(_vm._s(message.text) + " \n\n     \n")]), _vm._v(" "), (message.original.type === 'actions') ? _c('div', {
+      class: message.isMine ? 'confetti-button' : 'confetti-button-right',
+      domProps: {
+        "innerHTML": _vm._s(message.text)
+      }
+    }), _vm._v(" "), (message.original.type === 'actions') ? _c('div', {
       staticClass: "rows"
     }, _vm._l((message.original.actions), function(action) {
       return (message.original.type === 'actions') ? _c('div', {

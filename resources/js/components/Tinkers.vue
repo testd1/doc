@@ -2,8 +2,8 @@
 
 <div class="container">
         <div class="row"  v-for="message in messages" >
-<div  :class="message.isMine ? 'confetti-button' : 'confetti-button-right'"
- >{{ message.text }} 
+<div  :class="message.isMine ? 'confetti-button' : 'confetti-button-right'" v-html="message.text"
+ >
 
      
 </div>
